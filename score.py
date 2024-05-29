@@ -1,6 +1,7 @@
 gradelist = input().split()
-count = 1
+count = 0
 for i in gradelist:
     i = int(i)
-print(max(gradelist))
-print(min(gradelist))
+    if i <60:
+        count+=1
+print(count)
